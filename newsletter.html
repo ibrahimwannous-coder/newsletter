@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Internal Newsletter</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f4f4f4;
+            padding: 20px;
+        }
+        
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background:  white;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+        
+        .header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding:  60px 40px;
+            text-align:  center;
+        }
+        
+        .header h1 {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+        }
+        
+        .header .date {
+            opacity: 0.9;
+            font-size: 1.1em;
+        }
+        
+        .intro-section {
+            background: #f8f9fa;
+            padding:  40px;
+            border-left: 5px solid #667eea;
+        }
+        
+        .intro-section h2 {
+            color: #333;
+            margin-bottom: 20px;
+            font-size: 1.8em;
+        }
+        
+        .content-section {
+            padding: 40px;
+        }
+        
+        .news-item {
+            margin-bottom: 30px;
+            padding: 20px;
+            border-radius: 8px;
+            background: #f8f9fa;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        
+        .news-item:hover {
+            transform: translateY(-5px);
+            box-shadow:  0 6px 12px rgba(0,0,0,0.1);
+        }
+        
+        .news-item h3 {
+            color:  #667eea;
+            margin-bottom: 10px;
+            font-size: 1.4em;
+            display: flex;
+            align-items: center;
+        }
+        
+        .news-item h3::before {
+            content: "📌";
+            margin-right: 10px;
+        }
+        
+        .news-item p {
+            color: #555;
+            line-height: 1.6;
+        }
+        
+        .footer {
+            background: #2c3e50;
+            color: white;
+            padding: 30px 40px;
+            text-align: center;
+        }
+        
+        .cta-button {
+            display: inline-block;
+            background: #667eea;
+            color: white;
+            padding:  12px 30px;
+            text-decoration: none;
+            border-radius: 25px;
+            margin-top: 10px;
+            transition: background 0.3s ease;
+        }
+        
+        .cta-button:hover {
+            background: #764ba2;
+        }
+        
+        @media (max-width: 600px) {
+            .header h1 {
+                font-size: 1.8em;
+            }
+            
+            .content-section {
+                padding: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Internal Newsletter</h1>
+            <p class="date">January 2026 Edition</p>
+        </div>
+        
+        <div class="intro-section">
+            <h2>In this newsletter: </h2>
+            <p>Stay updated with the latest developments, progress reports, and exciting updates from our teams.</p>
+        </div>
+        
+        <div class="content-section">
+            <div class="news-item">
+                <h3>Warehouse Project</h3>
+                <p>Our warehouse expansion is on track!  The new facility will increase our storage capacity by 40% and improve logistics efficiency.</p>
+            </div>
+            
+            <div class="news-item">
+                <h3>Ailing Developments:  Latest Progress & Key Numbers</h3>
+                <p>Q4 results show a 25% increase in productivity.  Team collaboration tools have been successfully deployed across all departments.</p>
+            </div>
+            
+            <div class="news-item">
+                <h3>QC Platform:  Streamlining Quality Work Across Yungo</h3>
+                <p>The new quality control platform reduces review time by 30% and provides real-time analytics for better decision-making.</p>
+            </div>
+            
+            <div class="news-item">
+                <h3>InnoFlow for Verbraeken: From Idea to Implementation</h3>
+                <p>Innovation workflow system successfully launched, enabling faster prototype-to-production cycles. </p>
+            </div>
+            
+            <div class="news-item">
+                <h3>Sisu Checker: Updates, Link & Time Saved</h3>
+                <p>Latest updates include automated reporting and integration with existing tools, saving an average of 5 hours per week per team. </p>
+            </div>
+            
+            <div class="news-item">
+                <h3>Smart Tooling: Issues Solved That Made a Difference</h3>
+                <p>Recent bug fixes and optimizations have improved system stability by 60% and user satisfaction scores are at an all-time high.</p>
+            </div>
+            
+            <div class="news-item">
+                <h3>Chatbot Updates: What's Improved & What's Coming</h3>
+                <p>Enhanced natural language processing and 24/7 support capabilities.  Coming soon: multi-language support and advanced analytics.</p>
+            </div>
+        </div>
+        
+        <div class="footer">
+            <p>Have questions or feedback? </p>
+            <a href="#" class="cta-button">Contact Us</a>
+        </div>
+    </div>
+</body>
+</html>
